@@ -2,7 +2,7 @@ import HomePage from "../pages/HomePage/HomePage.tsx";
 import SearchPage from "../pages/SearchPage/SearchPage.tsx";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage.tsx";
 import Favourite from "../pages/Favourite/Favourite.tsx";
-import LoginPage from "../pages/LoginPage/LoginPage.tsx";
+import LoginPage from "../pages/LoginPage/LoginPage.js";
 
 export const routes =  [
     {
