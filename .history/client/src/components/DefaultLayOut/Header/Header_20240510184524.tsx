@@ -4,7 +4,7 @@ import HeaderTop from './HeaderTop/HeaderTop.tsx'
 import Navbar from './Navbar/NavBar.tsx'
 const Header = () => {
   return (
-    <header className='header w-[100%] min-h-[100px] bg-white-300 fixed z-[100]'>
+    <header className='header w-[100%] min-h-[100px] bg-white-300 sticky z-[1000]'>
       <HeaderTop/>
       <Navbar/>
     </header>

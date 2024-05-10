@@ -2,7 +2,7 @@ import React from 'react'
 const HomePage = () => {
 
   return (
-    <div className=''>
+    <div className='pt-[65px]'>
       <h1 className="text-center text-blue-500">HomePage</h1>
       <div>
       </div>
