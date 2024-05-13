@@ -4,10 +4,7 @@ import {Link} from "react-router-dom"
 import { FaChevronRight } from "react-icons/fa";
 const Favourite = () => {
   const [listFavourite, setListFavourite] = useState([])
-  // setListFavourite(listFavourite)
-  const product = {
-    
-  }
+  setListFavourite(listFavourite)
   return (
     <div className='favourite'>
       <h1 className='text-[2rem] mb-[5px] leading-[1.2rem] font-[600]'>
@@ -21,7 +18,6 @@ const Favourite = () => {
               {/* listFavourite.map((item) => {
 
               }) */}
-
             </div>
             :
             <div className="">

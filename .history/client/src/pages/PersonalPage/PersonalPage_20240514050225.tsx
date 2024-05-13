@@ -127,12 +127,9 @@ const PersonalPage = ({children}) => {
                 <Navbar bg={true} />
                 <div className="w-[100%] h-[100%]">
                     <div className="w-[100%] h-[50px] bg-gray-300 flex items-center ">
-                        <div className='pl-[30px]'>
-                            <Link to={"/"}> <span className='text-blue-500'>Home</span></Link> 
-                            <span> / </span>
-                        </div>
+                        <div className='pl-[30px]'>;v;dcd;cms  </div>
                     </div>
-                    <div className="w-[100%] h-[100%] p-[10px]">
+                    <div className="w-[100%] h-[100%] p-[30px]">
                          {children}
                     </div>
                 </div>

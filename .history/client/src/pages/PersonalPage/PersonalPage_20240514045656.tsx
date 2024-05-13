@@ -40,7 +40,7 @@ const PersonalPage = ({children}) => {
     };
   return (
     <div className="">
-        <div className="flex fixed w-[100vw]">
+        <div className="flex">
             <div className="w-[20%]  bg-gray-100">
                 <div className="bg-[#055699] h-[40px]" >
                     <h1 className='px-[60px] text-white'>LOGO</h1>
@@ -126,15 +126,10 @@ const PersonalPage = ({children}) => {
             <div className="w-[80%] min-h-[100vh] bg-[#f8f9fa]">
                 <Navbar bg={true} />
                 <div className="w-[100%] h-[100%]">
-                    <div className="w-[100%] h-[50px] bg-gray-300 flex items-center ">
-                        <div className='pl-[30px]'>
-                            <Link to={"/"}> <span className='text-blue-500'>Home</span></Link> 
-                            <span> / </span>
-                        </div>
+                    <div className="w-[100%] h-[50px] bg-gray-300">
+
                     </div>
-                    <div className="w-[100%] h-[100%] p-[10px]">
-                         {children}
-                    </div>
+                    {children}
                 </div>
             </div>
         </div>

@@ -128,7 +128,7 @@ const PersonalPage = ({children}) => {
                 <div className="w-[100%] h-[100%]">
                     <div className="w-[100%] h-[50px] bg-gray-300 flex items-center ">
                         <div className='pl-[30px]'>
-                            <Link to={"/"}> <span className='text-blue-500'>Home</span></Link> 
+                            <Link to={"/"}> <span>Home</span></Link> 
                             <span> / </span>
                         </div>
                     </div>

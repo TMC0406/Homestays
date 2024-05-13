@@ -12,22 +12,20 @@ import { IoIosLogOut } from "react-icons/io";
 import {Link} from "react-router-dom"
 const PersonalPage = ({children}) => {
     const [activeItem, setActiveItem] = useState(1);
+      // Hàm để lưu trạng thái vào localStorage
+  const saveStateToLocalStorage = () => {
+    localStorage.setItem('activeItem', JSON.stringify(activeItem));
+  };
     // Hàm để khôi phục trạng thái từ localStorage khi component được mount
     useEffect(() => {
         const storedCount = localStorage.getItem('activeItem');
         if (storedCount !== null) {
             setActiveItem(JSON.parse(storedCount));
         }
-    }, []);
-      // Hàm để lưu trạng thái vào localStorage
-  const saveStateToLocalStorage = () => {
-    localStorage.setItem('activeItem', JSON.stringify(activeItem));
-  };
-    // Lưu trạng thái vào localStorage mỗi khi trạng thái thay đổi
-    useEffect(() => {
+      }, []);
+      useEffect(() => {
         saveStateToLocalStorage();
-    }, [activeItem]);
-    
+      }, [activeItem]);
     const info = {
         username : "TMC",
         sdt : "123456789",   
@@ -40,7 +38,7 @@ const PersonalPage = ({children}) => {
     };
   return (
     <div className="">
-        <div className="flex fixed w-[100vw]">
+        <div className="flex">
             <div className="w-[20%]  bg-gray-100">
                 <div className="bg-[#055699] h-[40px]" >
                     <h1 className='px-[60px] text-white'>LOGO</h1>
@@ -126,15 +124,7 @@ const PersonalPage = ({children}) => {
             <div className="w-[80%] min-h-[100vh] bg-[#f8f9fa]">
                 <Navbar bg={true} />
                 <div className="w-[100%] h-[100%]">
-                    <div className="w-[100%] h-[50px] bg-gray-300 flex items-center ">
-                        <div className='pl-[30px]'>
-                            <Link to={"/"}> <span className='text-blue-500'>Home</span></Link> 
-                            <span> / </span>
-                        </div>
-                    </div>
-                    <div className="w-[100%] h-[100%] p-[10px]">
-                         {children}
-                    </div>
+                {children}
                 </div>
             </div>
         </div>
