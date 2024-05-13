@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from "react-router-dom"
 import { FaRegHeart } from "react-icons/fa";
-import { dataNavBar } from './dataNavBar';
 const Navbar = () => {
     const [activeItem, setActiveItem] = useState(1);
     const handleHeaderActive = (id) => {

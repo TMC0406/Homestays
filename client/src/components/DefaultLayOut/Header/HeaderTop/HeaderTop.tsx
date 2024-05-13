@@ -4,7 +4,7 @@ import Button from "../../../Button/Button.tsx"
 
 const HeaderTop = () => {
   return (
-    <div className='HeaderTop'>
+    <div className='HeaderTop bg-white'>
       <div  className='header-container flex justify-around'>
         {/* //////// LOGO /////////// */}
         <div className='header-logo'>
@@ -13,8 +13,20 @@ const HeaderTop = () => {
           </Link>
         </div>
         <div>
-          <Button text={"Đăng nhập"} textColor='text-[#ffffff]' bgColor={'bg-[#3961FB]'}/>
+          <Link to='/login'>
+            <Button
+              text={"Đăng nhập"}
+              textColor='text-[#ffffff]'
+              bgColor={'bg-[#3961FB]'} onClick={undefined} className={undefined}/>
+          </Link>
+          <Link to='/register'>
+            <Button
+              text={"Đăng ký"}
+              textColor='text-[#ffffff]'
+              bgColor={'bg-[#3961FB]'} onClick={undefined} className={undefined}/>
+          </Link>
         </div>
+
         {/* ////////// USE ///////// */}
       </div>
     </div>

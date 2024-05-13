@@ -1,11 +1,15 @@
-import React from "react";
+import React, {memo} from "react";
 
-const Button = ({text, textColor, bgColor}) => {
+const Button = ({text, textColor, bgColor, onClick, className}) => {
     return(
-        <button type="button" className={`py-[2px] px-[4px] ${textColor} ${bgColor} outline-none rounded-md`}>
+        <button
+            type="button"
+            className={`py-[2px] px-[4px] ${textColor} ${bgColor} ${className} outline-none rounded-md hover:underline`}
+            onClick={onClick}
+        >
             {text}
         </button>
     )
 }
 
-export default Button
+export default memo(Button)

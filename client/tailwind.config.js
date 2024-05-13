@@ -4,6 +4,9 @@ module.exports = {
     extend: {
       with: {
         '1100': '1100px'
+      },
+      maxWidth: {
+        '600' : '600px'
       }
     },
   },

@@ -5,7 +5,7 @@ import Footer from './Footer/Footer.tsx'
   return (
     <div className='Page'>
         <Header/>
-        <main className='mainPage min-h-[100vh] pt-[65px]'>
+        <main className='bg-[#f1f1f1] mainPage min-h-[100vh] pt-[70px]'>
           {children}
         </main>
         <Footer/>
