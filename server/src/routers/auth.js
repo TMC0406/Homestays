@@ -1,9 +1,11 @@
 import express from 'express'
-
-
+const multer = require('multer');
+const upload = multer();
+import * as authController from "../controller/auth"
 const router = express.Router()
-router.get('/login', (req, res) => {
-    res.send('Đăng nhập thành công')
-})
+router.post('/register' ,upload.none(),  authController.register) 
+
+
+
 
 export default router
