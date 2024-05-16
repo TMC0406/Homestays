@@ -1,9 +1,8 @@
 import express from 'express'
+import * as authController from "../controller/auth"
 
 
 const router = express.Router()
-router.get('/login', (req, res) => {
-    res.send('Đăng nhập thành công')
-})
+router.post('/register', authController.register) 
 
 export default router
