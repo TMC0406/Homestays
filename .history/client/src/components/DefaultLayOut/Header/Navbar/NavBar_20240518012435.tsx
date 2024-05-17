@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {Link , NavLink} from "react-router-dom"
 import { FaRegHeart } from "react-icons/fa";
-
 const Navbar = (bg) => {
     const [activeItem, setActiveItem] = useState(1);
     const handleHeaderActive = (id) => {
@@ -11,7 +10,7 @@ const Navbar = (bg) => {
   return (
    <div className={`header-navbar w-[100%] ${bg ? "bg-[#055699]" : "bg-blue-500"} `}>
         <ul className={`header-list-nav flex justify-around w-[1120px]  m-auto h-[40px] items-center text-[#ffffff] font-bold text-[14px] `}>
-            <NavLink to="/"  >
+            <NavLink to="/">
                 <li className={`flex  items-center px-[31.2px] h-[40px] hover:bg-[#f73859] ${activeItem === 1 ? "bg-[#f73859]" : ""} `}
                     onClick={() => handleHeaderActive(1)}>
                     <span>Trang chủ</span>
