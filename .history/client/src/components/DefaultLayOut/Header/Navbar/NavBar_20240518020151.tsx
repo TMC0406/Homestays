@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Link } from "react-router-dom"
 import { FaRegHeart } from "react-icons/fa";
-const Navbar = ({bg}) => {
+const Navbar = (bg:any) => {
     const [activeItem, setActiveItem] = useState(1);
     const handleHeaderActive = (id:any) => {
     setActiveItem(id);
