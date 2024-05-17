@@ -64,49 +64,49 @@ const PersonalPage = ({children}) => {
                     <div className="">
                         <ul>
                         <Link to="/personal/ManagePostings">
-                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItemNav === 1 ? "font-[700] bg-gray-200" : ""} `}
+                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItem === 1 ? "font-[700] bg-gray-200" : ""} `}
                                 onClick={() => handleHeaderActive(1)}>
                                 <span className='flex justify-around'><IoDocumentTextOutline className='m-[3px]' /> <span>Quản lý đăng tin</span>  </span>
                             </li>
                         </Link>
                         <Link to="/personal/Information">
-                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItemNav === 2 ? "font-[700] bg-gray-200" : ""} `}
+                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItem === 2 ? "font-[700] bg-gray-200" : ""} `}
                                 onClick={() => handleHeaderActive(2)}>
                                 <span className='flex justify-around'> <SlNote className='m-[3px]'  /> <span>Sửa thông tin cá nhân</span>  </span>
                             </li>
                         </Link>
                         <Link to="/personal/DepositMoney">
-                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItemNav === 3 ? "font-[700] bg-gray-200" : ""} `}
+                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItem === 3 ? "font-[700] bg-gray-200" : ""} `}
                                 onClick={() => handleHeaderActive(3)}>
                                 <span className='flex justify-around'><CgDollar className='m-[3px]'  />  <span> Nạp tiền vào tài khoản</span> </span>
                             </li>
                         </Link>
                         <Link to="/personal/DepositHistory">
-                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItemNav === 4 ? "font-[700] bg-gray-200" : ""} `}
+                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItem === 4 ? "font-[700] bg-gray-200" : ""} `}
                                 onClick={() => handleHeaderActive(4)}>
                                 <span className='flex justify-around'> <LiaHistorySolid  className='m-[3px]' />  <span> Lịch sử nạp tiền</span> </span>
                             </li>
                         </Link>
                         <Link to="/personal/PaymentHistory">
-                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItemNav === 5 ? "font-[700] bg-gray-200" : ""} `}
+                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItem === 5 ? "font-[700] bg-gray-200" : ""} `}
                                 onClick={() => handleHeaderActive(5)}>
                                 <span className='flex justify-around'> <RiFolderHistoryLine  className='m-[3px]' /> <span>Lịch sử thanh toán</span> </span>
                             </li>
                         </Link>
                         <Link to="/personal/ServicePriceList">
-                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItemNav === 6 ? "font-[700] bg-gray-200" : ""} `}
+                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItem === 6 ? "font-[700] bg-gray-200" : ""} `}
                                 onClick={() => handleHeaderActive(6)}>
                                 <span className='flex justify-around'> <FaRegClipboard  className='m-[3px]' /><span>Bảng giá dịch vụ</span> </span>
                             </li>
                         </Link>
                         <Link to="/personal/Contact">
-                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItemNav === 7 ? "font-[700] bg-gray-200" : ""} `}
+                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItem === 7 ? "font-[700] bg-gray-200" : ""} `}
                                 onClick={() => handleHeaderActive(7)}>
                                 <span className='flex justify-around'><GrContact  className='m-[3px]' /> <span>Liên hệ </span> </span>
                             </li>
                         </Link>
                         <Link to="/personal/logout">
-                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItemNav === 8 ? "font-[700] bg-gray-200" : ""} `}
+                            <li className={`flex items-center justify-left pl-[20px] h-[40px] hover:bg-white ${activeItem === 8 ? "font-[700] bg-gray-200" : ""} `}
                                 onClick={() => handleHeaderActive(8)}>
                                 <span className='flex justify-around'> <IoIosLogOut  className='m-[3px]' /> <span>Thoát</span> </span>
                             </li>
