@@ -3,7 +3,7 @@ import {Link , NavLink} from "react-router-dom"
 import { FaRegHeart } from "react-icons/fa";
 const Navbar = ({bg}) => {
     const [activeItem, setActiveItem] = useState(1);
-    const handleHeaderActive = (id:any) => {
+    const handleHeaderActive = (id) => {
     setActiveItem(id);
 };
 
