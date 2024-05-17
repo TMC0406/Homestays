@@ -1,12 +1,7 @@
 import React, {useState} from 'react'
-import {Link} from "react-router-dom"
+import {Link } from "react-router-dom"
 import { FaRegHeart } from "react-icons/fa";
-<<<<<<< HEAD:.history/client/src/components/DefaultLayOut/Header/Navbar/NavBar_20240517170305.tsx
-
-const Navbar = (bg) => {
-=======
 const Navbar = ({bg}) => {
->>>>>>> 8cf0f3c184d9aad3516f1cfbf4a63135656cd16e:client/src/components/DefaultLayOut/Header/Navbar/NavBar.tsx
     const [activeItem, setActiveItem] = useState(1);
     const handleHeaderActive = (id:any) => {
     setActiveItem(id);
