@@ -20,7 +20,7 @@ const LoginPage = () => {
             className={'w-full h-[45px] font-bold'} onClick={undefined}          />
         </div>
         <div className='flex justify-between'>
-          <Link to=''>
+          <Link to='./components/ForgotPassword/ForgotPassword.tsx'>
             <small className='text-[#1266dd] text-[14px] cursor-pointer hover:text-[#f60]'>
               Bạn quên mật khẩu???
             </small>

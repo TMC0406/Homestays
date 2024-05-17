@@ -23,12 +23,12 @@ const Register = () => {
             className={'w-full h-[45px] font-bold text-[14px]'} onClick={undefined}/>
         </div>
         <div className='block justify-between'>
-          <p className='text-[14px] my-[14px] px-[5px]'>
+          <p className='text-[14px]'>
             Bấm vào nút đăng ký tức là bạn đã đồng ý với 
             <span className='text-[#1266dd] text-[14px] cursor-pointer hover:text-[#f60]'> quy định sử dụng </span>
             của chúng tôi
           </p>
-          <p className='text-[14px] my-[14px] px-[5px]'>
+          <p className='text-[14px]'>
             Bạn đã có tài khoản?
             <Link to='/login'>
               <span className='text-[#1266dd] text-[14px] cursor-pointer hover:text-[#f60]'> Đăng nhập ngay</span>
