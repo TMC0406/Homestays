@@ -3,7 +3,7 @@ const HomePage = () => {
   return (
     <section className='w-1100'>
       <div className='w-1100'>
-
+      hompage
       </div>
     </section>
   )
