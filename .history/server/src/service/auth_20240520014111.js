@@ -15,7 +15,7 @@ export const registerService = ({name, phone, password}) => new Promise(async(re
                 phone, 
                 name,
                 password: hashPassword(password),
-                id:  uuidv4()
+                id:  nanoid(10)
             }
         })
         const token = response[1] && jwt.sign({id: response[0].id, phone: response[0].phone}, process.env.SECRET_KEY, {expiresIn: '1d'})
