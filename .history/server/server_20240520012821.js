@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import cors from "cors"
 import initRouter from './src/routers/index.js'
-import connectDatabase from './src/config/connectDatabase.js'
+import connectDatabase from './src/config/connectDatabase'
 
 const app = express()
 app.use(cors({

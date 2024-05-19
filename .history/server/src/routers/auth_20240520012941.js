@@ -1,5 +1,5 @@
 import express from 'express'
-import multer from 'multer';
+const multer = require('multer');
 const upload = multer();
 import * as authController from "../controller/auth.js"
 

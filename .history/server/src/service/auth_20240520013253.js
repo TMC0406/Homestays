@@ -1,4 +1,4 @@
-import db from "../models"
+import db from "../models/index"
 import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
 import { nanoid } from 'nanoid';
