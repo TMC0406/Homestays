@@ -1,9 +1,10 @@
 import db from "../models"
 import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
-import { v4 as uuidv4 } from 'uuid';
-import dotenv from 'dotenv';
-dotenv.config();
+import { nanoid } from 'nanoid';
+import {v4 as UUIDV4} from 'uuidv4'
+require('dotenv').config()
+
 
 const hashPassword = password => bcrypt.hashSync(password, bcrypt.genSaltSync(10))
 export const registerService = ({name, phone, password}) => new Promise(async(resolve, reject) => {
