@@ -1,15 +1,9 @@
 import db from "../models"
 import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
-<<<<<<< HEAD
-import { v4 as uuidv4 } from 'uuid';
-import dotenv from 'dotenv';
-dotenv.config();
-=======
 import { nanoid } from 'nanoid';
-import {v4 as uuidv4} from 'uuidv4'
+import {v4 as UUIDV4} from 'uuidv4'
 require('dotenv').config()
->>>>>>> 0482dca3f1335f1f7155bd9466662106bed4faad
 
 
 const hashPassword = password => bcrypt.hashSync(password, bcrypt.genSaltSync(10))
