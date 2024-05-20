@@ -11,25 +11,24 @@ import { FaRegClipboard } from "react-icons/fa";
 import { IoIosLogOut } from "react-icons/io";
 import {Link} from "react-router-dom"
 import logo from "../../assets/imgs/logo/logoPerson.png"
-import {useSelector,useDispatch} from "react-redux"
-import { setActiveItemNav} from "../../../src/redux/slides/main1Slice.js"
 const PersonalPage = ({children}) => {
-    const dispatch = useDispatch();
-    const activeItemNav = useSelector((state: any) => state.reducer.main1.activeItemNav);
+    const [activeItemNav, setActiveItem] = useState(() => {
+        return Number(localStorage.getItem('activeItemNav')) || 6; // Giá trị mặc định là 6 cho "Bảng giá dịch vụ"
+    });
+
     useEffect(() => {
-        // Lưu active item vào localStorage mỗi khi nó thay đổi
         localStorage.setItem('activeItemNav', activeItemNav.toString());
     }, [activeItemNav]);
-    const handleHeaderActive = (id: number) => {
-        dispatch(setActiveItemNav(id));
-    };
-     const info = {
+    const info = {
         username : "TMC",
         sdt : "123456789",   
         mathanhvien : "987654321",
         tkchinh : "1000000",
         avatar :  avatar,
     }
+    const handleHeaderActive = (id:any) => {
+          setActiveItem(id);
+    };
     const changeTittle = () => {
         let title = " ";
         switch (activeItemNav) {
@@ -143,7 +142,7 @@ const PersonalPage = ({children}) => {
                 </div>               
             </div>
             <div className="w-[80%] min-h-[100vh] bg-[#f8f9fa]">
-                <Navbar setNav=" bg-[#055699]" />
+                <Navbar setnav=" bg-[#055699]" />
                 <div className="w-[100%] h-[100%]">
                     <div className="w-[100%] h-[50px] bg-gray-300 flex items-center ">
                         <div className='pl-[30px]'>

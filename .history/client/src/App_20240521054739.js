@@ -4,6 +4,7 @@ import {routes} from "./routes/index.js"
 import DefaultLayOut from './components/DefaultLayOut/DefaultLayOut.tsx'
 import {personalRoutes} from "./routes/personalRoutes"
 import PersonalPage from './pages/PersonalPage/PersonalPage.tsx'
+import Footer from './components/DefaultLayOut/Footer/Footer.tsx'
 import Header from './components/DefaultLayOut/Header/Header.tsx'
  const App = () => {
   // console.log(personalRoutes)
@@ -13,7 +14,8 @@ import Header from './components/DefaultLayOut/Header/Header.tsx'
           <Routes>
                 {
                   routes.map((it)=>{
-                  const Page = it.page;
+                    const Page = it.page;
+
                 const Layout = ({ children }) => {
                   if (it.isShowHeader && it.isShowFooter) {
                     return (
@@ -43,6 +45,7 @@ import Header from './components/DefaultLayOut/Header/Header.tsx'
                   }
                   return <div>{children}</div>;
                 };
+                // it.isShowHeader && it.isShowFooter ? DefaultLayOut : ({ children }) => <div>{children}</div>;
                 return (
                   <Route key={it.path} path ={it.path}  element={
                   <Layout className='relative'>

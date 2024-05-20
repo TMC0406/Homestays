@@ -13,7 +13,8 @@ import Header from './components/DefaultLayOut/Header/Header.tsx'
           <Routes>
                 {
                   routes.map((it)=>{
-                  const Page = it.page;
+                    const Page = it.page;
+
                 const Layout = ({ children }) => {
                   if (it.isShowHeader && it.isShowFooter) {
                     return (
@@ -43,6 +44,7 @@ import Header from './components/DefaultLayOut/Header/Header.tsx'
                   }
                   return <div>{children}</div>;
                 };
+                // it.isShowHeader && it.isShowFooter ? DefaultLayOut : ({ children }) => <div>{children}</div>;
                 return (
                   <Route key={it.path} path ={it.path}  element={
                   <Layout className='relative'>

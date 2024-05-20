@@ -13,7 +13,8 @@ import Header from './components/DefaultLayOut/Header/Header.tsx'
           <Routes>
                 {
                   routes.map((it)=>{
-                  const Page = it.page;
+                    const Page = it.page;
+
                 const Layout = ({ children }) => {
                   if (it.isShowHeader && it.isShowFooter) {
                     return (

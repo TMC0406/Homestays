@@ -15,7 +15,7 @@ const Navbar = ({setNav}) => {
         dispatch(setActiveItem(id));
     };
   return (
-   <div className={`header-navbar w-[100%]  ${setNav}  ` }>
+   <div className={`header-navbar w-[100%]  ${setnav}  ` }>
         <ul className={`header-list-nav flex justify-around w-[1120px]  m-auto h-[40px] items-center text-[#ffffff] font-bold text-[14px] `}>
             <Link to="/">
                 <li className={`flex  items-center px-[31.2px] h-[40px] hover:bg-[#f73859] ${activeItem === 1 ? "bg-[#f73859]" : ""} `}

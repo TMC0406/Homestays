@@ -14,6 +14,15 @@ import logo from "../../assets/imgs/logo/logoPerson.png"
 import {useSelector,useDispatch} from "react-redux"
 import { setActiveItemNav} from "../../../src/redux/slides/main1Slice.js"
 const PersonalPage = ({children}) => {
+    // const [activeItemNav, setActiveItem] = useState(() => {
+    //     return Number(localStorage.getItem('activeItemNav')) || 6; // Giá trị mặc định là 6 cho "Bảng giá dịch vụ"
+    // });
+    // useEffect(() => {
+    //     localStorage.setItem('activeItemNav', activeItemNav.toString());
+    // }, [activeItemNav]);
+    // const handleHeaderActive = (id:any) => {
+    //       setActiveItem(id);
+    // };
     const dispatch = useDispatch();
     const activeItemNav = useSelector((state: any) => state.reducer.main1.activeItemNav);
     useEffect(() => {

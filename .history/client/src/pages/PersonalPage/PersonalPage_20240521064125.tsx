@@ -12,8 +12,17 @@ import { IoIosLogOut } from "react-icons/io";
 import {Link} from "react-router-dom"
 import logo from "../../assets/imgs/logo/logoPerson.png"
 import {useSelector,useDispatch} from "react-redux"
-import { setActiveItemNav} from "../../../src/redux/slides/main1Slice.js"
+import { setActiveItemPs} from "../../../src/redux/slides/main1Slice.js"
 const PersonalPage = ({children}) => {
+    // const [activeItemNav, setActiveItem] = useState(() => {
+    //     return Number(localStorage.getItem('activeItemNav')) || 6; // Giá trị mặc định là 6 cho "Bảng giá dịch vụ"
+    // });
+    // useEffect(() => {
+    //     localStorage.setItem('activeItemNav', activeItemNav.toString());
+    // }, [activeItemNav]);
+    // const handleHeaderActive = (id:any) => {
+    //       setActiveItem(id);
+    // };
     const dispatch = useDispatch();
     const activeItemNav = useSelector((state: any) => state.reducer.main1.activeItemNav);
     useEffect(() => {
@@ -21,7 +30,7 @@ const PersonalPage = ({children}) => {
         localStorage.setItem('activeItemNav', activeItemNav.toString());
     }, [activeItemNav]);
     const handleHeaderActive = (id: number) => {
-        dispatch(setActiveItemNav(id));
+        dispatch(setActiveItemPs(id));
     };
      const info = {
         username : "TMC",
