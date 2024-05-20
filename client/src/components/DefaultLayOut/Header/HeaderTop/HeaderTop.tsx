@@ -4,7 +4,7 @@ import Button from "../../../Button/Button.tsx"
 
 const HeaderTop = () => {
   return (
-    <div className='HeaderTop bg-white'>
+    <div className='HeaderTop'>
       <div  className='header-container flex justify-around'>
         {/* //////// LOGO /////////// */}
         <div className='header-logo'>
