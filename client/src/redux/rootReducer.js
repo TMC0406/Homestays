@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-// import userReducer from './features/user/userSlice';
+import userSlides from './slides/userSlides';
 
 const rootReducer = combineReducers({
-//   user: userReducer,
+    userSlides: userSlides
 });
 
 export default rootReducer;

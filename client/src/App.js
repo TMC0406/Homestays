@@ -28,13 +28,12 @@ import PersonalPage from './pages/PersonalPage/PersonalPage.tsx'
                 return (
                   <Route key={it.path} path={it.path} element={
                     <PersonalPage>
-                    < PageChild />
-                  </PersonalPage>
-                    }
-                  />
+                      < PageChild />
+                    </PersonalPage>
+                    }/>
                 );
           })}
-          </Routes>
+                </Routes>
         </Router>
     </div>
   )
