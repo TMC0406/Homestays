@@ -1,12 +1,14 @@
-import React from 'react'
+import React, {memo} from 'react'
 
 const Input = ({label, id, type, value}) => {
   return (
     <div className='mb-[20px]'>
         <label htmlFor={id} className='text-[13px] font-normal'>{label}</label>
-        <input type={type} id={id}  value={value} className='outline-none bg-[#e8f0fe] p-2 rounded-md w-full mt-[5px]' />
+        <input type={type} id={id}  value={value}  className='outline-none bg-[#e8f0fe] p-2 rounded-md w-full mt-[5px]' />
     </div>
   )
 }
 
-export default Input
+export default memo(Input)
+
+//onChange={(e)=> setValue(e.target.value)}
