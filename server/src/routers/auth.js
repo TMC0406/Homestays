@@ -1,10 +1,13 @@
-import express from 'express';
-const router = express.Router();
-import multer from 'multer';
+import express from 'express'
+const multer = require('multer');
 const upload = multer();
-import * as authController from "../controller/auth.js"
+import * as authController from "../controller/auth"
 
-router.post('/register', upload.none(), authController.register);
-router.post('/login', upload.none(), authController.login);
+const router = express.Router()
+router.post('/register' ,upload.none(),  authController.register) 
+router.post('/login' ,upload.none(),  authController.login) 
 
-export default router;
+
+
+
+export default router
