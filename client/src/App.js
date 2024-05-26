@@ -57,13 +57,12 @@ import Header from './components/DefaultLayOut/Header/Header.tsx'
                 return (
                   <Route key={it.path} path={it.path} element={
                     <PersonalPage>
-                    < PageChild />
-                  </PersonalPage>
-                    }
-                  />
+                      < PageChild />
+                    </PersonalPage>
+                    }/>
                 );
           })}
-          </Routes>
+                </Routes>
         </Router>
     </div>
   )

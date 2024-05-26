@@ -4,8 +4,6 @@ import NotFoundPage from "../pages/NotFoundPage/NotFoundPage.tsx";
 import FavouritePage from "../pages/Favourite/FavouritePage.tsx";
 import LoginPage from "../pages/LoginPage/LoginPage.tsx";
 import PersonalPage from "../pages/PersonalPage/PersonalPage.tsx";
-
-
 export const routes =  [
     {
         path : "/",

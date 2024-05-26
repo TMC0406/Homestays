@@ -7,6 +7,7 @@ import authSlides from './slides/authSlides';
 
 import autoMergeLevel2 from "redux-persist/es/stateReconciler/autoMergeLevel2"
 
+
 const commonConfig = {
     storage,
     stateReconciler: autoMergeLevel2

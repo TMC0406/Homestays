@@ -20,5 +20,4 @@ const InputForm = ({ label, value, setValue, keyPayload, invalidFields, setInval
       </div>
   )
 }
-
 export default memo(InputForm)

@@ -13,6 +13,7 @@ import {Link} from "react-router-dom"
 import logo from "../../assets/imgs/logo/logoPerson.png"
 import {useSelector,useDispatch} from "react-redux"
 import { setActiveItemNav} from "../../../src/redux/slides/main1Slice.js"
+
 const PersonalPage = ({children}) => {
     const dispatch = useDispatch();
     const activeItemNav = useSelector((state: any) => state.main1.activeItemNav);
