@@ -1,11 +1,9 @@
+
 import HomePage from "../pages/HomePage/HomePage.tsx";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage.tsx";
 import FavouritePage from "../pages/Favourite/FavouritePage.tsx";
 import LoginPage from "../pages/LoginPage/LoginPage.tsx";
 import PersonalPage from "../pages/PersonalPage/PersonalPage.tsx";
-
-// import  Register  from "../pages/Register/Register.tsx";
-
 export const routes =  [
     {
         path : "/",
@@ -25,12 +23,6 @@ export const routes =  [
         isShowHeader : true,
         isShowFooter : true
     },
-    // {
-    //     path : "/register",
-    //     page : Register,
-    //     isShowHeader : true,
-    //     isShowFooter : true
-    // },
     {
         path : "*",
         page : NotFoundPage,
@@ -40,4 +32,3 @@ export const routes =  [
         page : PersonalPage,
     }
 ]
-
