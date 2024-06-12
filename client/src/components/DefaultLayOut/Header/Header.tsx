@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header  className='header w-[100%] min-h-[100px] bg-white fixed  z-[1000] top-[0]'>
       <HeaderTop/>
-      <Navbar  setNav="bg-blue-500"/>
+      <Navbar  setNav="bg-[#3e4095]"/>
     </header>
   ) 
 }

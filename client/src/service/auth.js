@@ -19,6 +19,7 @@ export const apiLogin = (payload) => new Promise(async(resolve, reject) => {
             url: '/api/v1/auth/login',
             data: payload
         })
+        console.log(response);
         resolve(response)
     } catch (error) {
         reject(error)

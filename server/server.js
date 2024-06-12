@@ -9,7 +9,6 @@ app.use(cors({
     origin: process.env.CLIENT_URL,
     methods: ['POST', 'GET', 'PUT', 'DELETE']
 }))
-
 //Đọc API từ Client gửi lên
 app.use(express.json())
 app.use(express.urlencoded({extended: true})) //Giúp đọc data dạng form data từ Client gửi lên
