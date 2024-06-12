@@ -23,10 +23,13 @@ var initState = {
   money: 0,
   rules: "",
   avatar: "",
-  zalo: ""
+  zalo: "",
+  update: false
 };
 
 var authSlides = function authSlides() {
+  var _objectSpread2;
+
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
@@ -49,11 +52,11 @@ var authSlides = function authSlides() {
 
     case _actionTypes.actionTypes.REGISTER_FAIL:
     case _actionTypes.actionTypes.LOGIN_FAIL:
-      return _objectSpread({}, state, _defineProperty({
+      return _objectSpread({}, state, (_objectSpread2 = {
         isLoggedIn: false,
         msg: action.data,
         token: null
-      }, "msg", ''));
+      }, _defineProperty(_objectSpread2, "msg", ''), _defineProperty(_objectSpread2, "update", !state.update), _objectSpread2));
 
     case _actionTypes.actionTypes.LOGOUT:
       return _objectSpread({}, state, {

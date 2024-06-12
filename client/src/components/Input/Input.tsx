@@ -2,7 +2,7 @@ import React, {memo} from 'react'
 
 const InputForm = ({ label, value, setValue, keyPayload, invalidFields, setInvalidFields, type }) => {
   return (
-      <div>
+      <div className='py-[5px]'>
           <label htmlFor={keyPayload} className='text-xs' >{label}</label>
           <input
               type={type || 'text'}
@@ -20,5 +20,5 @@ const InputForm = ({ label, value, setValue, keyPayload, invalidFields, setInval
       </div>
   )
 }
-
 export default memo(InputForm)
+

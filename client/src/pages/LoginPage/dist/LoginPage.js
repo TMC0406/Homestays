@@ -49,10 +49,10 @@ var LoginPage = function () {
     var location = react_router_dom_1.useLocation();
     var dispatch = react_redux_1.useDispatch();
     var navigate = react_router_dom_1.useNavigate();
-    var isLoggedIn = react_redux_1.useSelector(function (state) { return state.auth; }).isLoggedIn;
-    var _c = react_1.useState((_a = location.state) === null || _a === void 0 ? void 0 : _a.flag), isRegister = _c[0], setIsRegister = _c[1];
-    var _d = react_1.useState({ name: '', phone: '', password: '' }), payload = _d[0], setPayload = _d[1];
-    var _e = react_1.useState([{ name: "", message: "" }]), invalidFields = _e[0], setInvalidFields = _e[1];
+    var _c = react_redux_1.useSelector(function (state) { return state.auth; }), isLoggedIn = _c.isLoggedIn, msg = _c.msg, update = _c.update;
+    var _d = react_1.useState((_a = location.state) === null || _a === void 0 ? void 0 : _a.flag), isRegister = _d[0], setIsRegister = _d[1];
+    var _e = react_1.useState({ name: '', phone: '', password: '' }), payload = _e[0], setPayload = _e[1];
+    var _f = react_1.useState([{ name: "", message: "" }]), invalidFields = _f[0], setInvalidFields = _f[1];
     react_1.useEffect(function () {
         var _a;
         setIsRegister((_a = location.state) === null || _a === void 0 ? void 0 : _a.flag);
@@ -180,9 +180,9 @@ var LoginPage = function () {
             react_1["default"].createElement(react_1["default"].Fragment, null,
                 isRegister && react_1["default"].createElement(Input_tsx_1["default"], { setInvalidFields: setInvalidFields, invalidFields: invalidFields, label: 'HỌ TÊN', value: payload.name, setValue: setPayload, keyPayload: 'name', type: 'name' }),
                 react_1["default"].createElement(Input_tsx_1["default"], { setInvalidFields: setInvalidFields, invalidFields: invalidFields, label: 'SỐ ĐIỆN THOẠI', value: payload.phone, setValue: setPayload, keyPayload: 'phone', type: 'phone' }),
-                react_1["default"].createElement(Input_tsx_1["default"], { setInvalidFields: setInvalidFields, invalidFields: invalidFields, label: 'MẬT KHÂU', value: payload.password, setValue: setPayload, keyPayload: 'password', type: 'password' })),
-            react_1["default"].createElement("div", { className: 'mb-[20px]' },
-                react_1["default"].createElement(Button_tsx_1["default"], { text: isRegister ? 'Đăng kí' : 'Đăng nhập', textColor: 'text-[#ffffff]', bgColor: 'bg-[#3961fb]', className: 'w-full h-[45px] font-bold', onClick: handleSubmit })),
+                react_1["default"].createElement(Input_tsx_1["default"], { setInvalidFields: setInvalidFields, invalidFields: invalidFields, label: 'MẬT KHẨU', value: payload.password, setValue: setPayload, keyPayload: 'password', type: 'password' })),
+            react_1["default"].createElement("div", { className: 'mb-[20px] mt-[20px]' },
+                react_1["default"].createElement(Button_tsx_1["default"], { text: isRegister ? 'Đăng kí' : 'Đăng nhập', className: 'bg-[#3961fb] text-[#ffffff] w-full h-[45px] font-bold', onClick: handleSubmit, icon: undefined })),
             react_1["default"].createElement("div", { className: 'flex justify-between' }, isRegister
                 ?
                     react_1["default"].createElement(react_1["default"].Fragment, null,

@@ -44,6 +44,7 @@ export const login = (payload) => async (dispatch) => {
         })
     }
 }
+<<<<<<< HEAD
 export const ChangeInfo= (payload) => async (dispatch) => {
     try {
         const response = await changeInfo(payload)
@@ -56,6 +57,8 @@ export const ChangeInfo= (payload) => async (dispatch) => {
         alert(error)
     }
 }
+=======
+>>>>>>> f014e9f95e87f448074d0592ef3bd508640f83d5
 export const logout = () => ({
     type: actionTypes.LOGOUT
 })

@@ -33,9 +33,9 @@ var HeaderTop = function () {
                     react_1["default"].createElement("div", { onClick: gotohome, className: "flex flex items-center justify-around " },
                         react_1["default"].createElement("img", { className: 'logo-img w-[50px]', src: logoPage_jpg_1["default"], alt: "Logo " }),
                         react_1["default"].createElement("h1", { className: "text-[1.2rem] font-[900] text-[#4f5091]" }, "HOMESTAY HEALING"))),
-                !isLoggedIn && react_1["default"].createElement("div", null,
-                    react_1["default"].createElement(Button_tsx_1["default"], { text: "Đăng nhập", textColor: 'text-[#ffffff]', bgColor: 'bg-[#3961FB]', onClick: function () { return goLogin(false); }, className: undefined }),
-                    react_1["default"].createElement(Button_tsx_1["default"], { text: "Đăng ký", textColor: 'text-[#ffffff]', bgColor: 'bg-[#3961FB]', onClick: function () { return goLogin(true); }, className: undefined })),
+                !isLoggedIn && react_1["default"].createElement("div", { className: "flex" },
+                    react_1["default"].createElement(Button_tsx_1["default"], { text: "Đăng nhập", onClick: function () { return goLogin(false); }, className: 'bg-[#3961FB] text-[#ffffff] h-[40px] w-[100px] mx-[5px] rounded-[10px] py-[2px] px-[4px] ', icon: undefined }),
+                    react_1["default"].createElement(Button_tsx_1["default"], { text: "Đăng ký", onClick: function () { return goLogin(true); }, className: 'bg-[#3961FB] text-[#ffffff] h-[40px] w-[100px] mx-[5px] rounded-[10px] py-[2px] px-[4px] ', icon: undefined })),
                 isLoggedIn &&
                     react_1["default"].createElement(react_router_dom_1.Link, { to: "/personal/Information", onClick: function () { return handleHeaderActive(2, 0); } },
                         react_1["default"].createElement("div", { className: "flex" },
