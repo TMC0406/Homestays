@@ -3,17 +3,18 @@ import ItemDetail from '../../pages/HomePage/components/ItemDetail.tsx';
 import Button from "../Button/Button.tsx";
 
 const Pagination = ({ data = [] }) => {
-  const newData = data.filter((item: any) => {
-    if (item?.address.includes("Hồ Chí Minh")) {
-      return item
-    }
-  })
-  console.log(newData);
+    const newData = data.filter((item:any)=>{
+        if (item?.address.includes("Hồ Chí Minh") ){
+                return item 
+        }
+    })
+    console.log(newData);
     
   const [currentPage, setCurrentPage] = useState(1);
   const [perPage, setPerPage] = useState(10);
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(perPage);
+  const headerPostingLish = useRef()
 
   // Ensure data is defined before calling slice
   const record = data.slice(start, end);
@@ -28,17 +29,17 @@ const Pagination = ({ data = [] }) => {
   const showPage = data?.length > 0 && data.map((item:any, index) => {
     if (index >= start && index < end) {
       return (
-        <div key={index}>
-          <ItemDetail
-            key={item?.id}
-            images={JSON.parse(item?.images?.image)}
-            address={item?.address}
-            attributes={item?.attributes}
-            description={JSON.parse(item?.description)}
-            star={+item?.star}
-            title={item?.title}
-            users={item?.users}
-          />
+          <div key={index}>
+            <ItemDetail
+              key={item?.id} 
+              images={JSON.parse(item?.images?.image)} 
+              address={item?.address} 
+              attributes={item?.attributes}   
+              description={JSON.parse(item?.description)}
+              star={+item?.star}
+              title={item?.title}
+              users={item?.users}
+            />
         </div>
       );
     }

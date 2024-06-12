@@ -7,11 +7,10 @@ const indexs = [0,1,2,3]
 const ItemDetail = ({images, address, attributes, star, description, title, users}) => {
     const [isHoverIcon, setIsHoverIcon] = useState(false)
     const handleStar = (star) => {
-        const stars: JSX.Element[] = []
-        for(let i = 0; i <= +star; i++) stars.push( <IoStarSharp className='star-item' size={17} />  )
+        const stars = []
+        for(let i=1; i<=+star; i++) stars.push( <IoStarSharp className='star-item' size={17} /> )
         return stars
     }
-    
     return (
         <div className='w-full flex mb-[10px] py-[15px]  border-t-[1px] border-solid border-[#E13427]'>
             <div className='w-[40%] flex flex-wrap gap-[2px] items-center relative'>
@@ -32,16 +31,11 @@ const ItemDetail = ({images, address, attributes, star, description, title, user
             <div className='w-[60%] ml-[15px]'>
                 <h3 className='mb-[10px] text-[14px] text-[#e13427] pr-[20px] font-bold'>
                     <span className='inline-block text-[#ffd454] mr-[3px]'>
-                        {/* <IoStarSharp className='star-item' size={17} />
                         <IoStarSharp className='star-item' size={17} />
                         <IoStarSharp className='star-item' size={17} />
                         <IoStarSharp className='star-item' size={17} />
-                        <IoStarSharp className='star-item' size={17} /> */}
-                        {handleStar(star).length > 0 && handleStar(+star).map((star, number) => {
-                            return(
-                                <span key={number}>{star}</span>
-                            )
-                        })}
+                        <IoStarSharp className='star-item' size={17} />
+                        <IoStarSharp className='star-item' size={17} />
                     </span>
                     {title}
                 </h3>

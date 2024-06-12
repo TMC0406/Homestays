@@ -8,7 +8,7 @@ const ItemDetail = ({images, address, attributes, star, description, title, user
     const [isHoverIcon, setIsHoverIcon] = useState(false)
     const handleStar = (star) => {
         const stars: JSX.Element[] = []
-        for(let i = 0; i <= +star; i++) stars.push( <IoStarSharp className='star-item' size={17} />  )
+        for(let i=0; i<= +star; i++) stars.push( <IoStarSharp className='star-item' size={17} />  )
         return stars
     }
     

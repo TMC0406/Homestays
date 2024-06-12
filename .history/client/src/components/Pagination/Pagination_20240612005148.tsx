@@ -3,12 +3,12 @@ import ItemDetail from '../../pages/HomePage/components/ItemDetail.tsx';
 import Button from "../Button/Button.tsx";
 
 const Pagination = ({ data = [] }) => {
-  const newData = data.filter((item: any) => {
-    if (item?.address.includes("Hồ Chí Minh")) {
-      return item
-    }
-  })
-  console.log(newData);
+    const newData = data.filter((item:any)=>{
+        if (item?.address.includes("Hồ Chí Minh")){
+          return item 
+        }
+    })
+    console.log(newData);
     
   const [currentPage, setCurrentPage] = useState(1);
   const [perPage, setPerPage] = useState(10);

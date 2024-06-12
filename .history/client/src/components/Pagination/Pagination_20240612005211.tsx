@@ -8,7 +8,7 @@ const Pagination = ({ data = [] }) => {
       return item
     }
   })
-  console.log(newData);
+    console.log(newData);
     
   const [currentPage, setCurrentPage] = useState(1);
   const [perPage, setPerPage] = useState(10);
