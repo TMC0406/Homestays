@@ -47,7 +47,9 @@ const ManagePostings = () => {
                   <td></td>
                 </tr>
                 :
-                  <tr> Bạn chưa có tin đăng nào. Bấm <Link to={`/personal/DepositMoney/posting`} className='text-blue-400'> vào đây</Link> để bắt đầu đăng tin</tr>
+                <Link to="/personal/DepositMoney/posting">
+                  <tr> Bạn chưa có tin đăng nào. Bấm <Link to="" className='text-blue-400'> vào đây</Link> để bắt đầu đăng tin</tr>
+                </Link>
               }
           </tbody>
         </table>

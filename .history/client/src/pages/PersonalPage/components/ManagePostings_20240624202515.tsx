@@ -23,9 +23,7 @@ const ManagePostings = () => {
               <option value="ExpiredNews">Tin hết hạn</option>
               <option value="ExpiredNews">Tin đang ẩn</option>
           </select>
-          <Link to={`/personal/DepositMoney/posting`}>
-            <button className='px-[10px] py-[5px] text-white font-[500] bg-[#dc3545]'>Đăng tin mới</button>
-          </Link>
+          <button className='px-[10px] py-[5px] text-white font-[500] bg-[#dc3545]'>Đăng tin mới</button>
           </div>
         </div>
         <table className='w-[100%]  m-[5px] p-[5px]' >
@@ -47,7 +45,9 @@ const ManagePostings = () => {
                   <td></td>
                 </tr>
                 :
-                  <tr> Bạn chưa có tin đăng nào. Bấm <Link to={`/personal/DepositMoney/posting`} className='text-blue-400'> vào đây</Link> để bắt đầu đăng tin</tr>
+                <Link to={`/posting`}>
+                  <tr> Bạn chưa có tin đăng nào. Bấm <Link to="" className='text-blue-400'> vào đây</Link> để bắt đầu đăng tin</tr>
+                </Link>
               }
           </tbody>
         </table>

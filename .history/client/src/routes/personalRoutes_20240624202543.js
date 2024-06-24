@@ -46,7 +46,7 @@ export const personalRoutes =  [
         PageChild : Transfer,
     },
     {
-        path : "/personal/DepositMoney/posting",
+        path : "/posting",
         PageChild : Posting,
     },
 ]

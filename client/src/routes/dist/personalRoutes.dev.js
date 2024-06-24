@@ -23,6 +23,8 @@ var _Contact = _interopRequireDefault(require("../pages/PersonalPage/components/
 
 var _Transfer = _interopRequireDefault(require("../pages/PersonalPage/DepositMoney/Transfer.tsx"));
 
+var _Posting = _interopRequireDefault(require("../pages/PersonalPage/Posting/Posting.tsx"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var personalRoutes = [{
@@ -52,5 +54,8 @@ var personalRoutes = [{
 }, {
   path: "/personal/DepositMoney/transfer",
   PageChild: _Transfer["default"]
+}, {
+  path: "/personal/DepositMoney/posting",
+  PageChild: _Posting["default"]
 }];
 exports.personalRoutes = personalRoutes;
